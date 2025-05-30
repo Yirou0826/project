@@ -47,7 +47,62 @@ table {
 	border-spacing: 0;
 }
 
+/* ----------------------全站設定----------------------- */
+@import url( https://fonts.googleapis.com/css?family=Noto+Sans+TC);
 
-h1{
-    color: blue;
+*:before,*:after {
+	font-family: "Noto Sans TC", sans-serif;
+	box-sizing: border-box;
+	outline: solid 1px;
+	line-height: 1.5;
+}
+/* ------------------------------------------------------ */
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+/* ----------------------------------------------------- */
+.wrap{
+	margin: 0 auto;
+	max-width: 1920px;
+}
+.header{
+	display: flex;
+	justify-content: center;
+}
+.header-link a{
+	font-size: 28px;
+	font-weight: 700;
+	margin: 24px 40px;
+}
+.banner{
+	max-width: 100%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.banner .banner-l{
+	width: 50%;
+}
+.banner .banner-r{
+	width: 50%;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-image: url("images/Hero Section2.png");
+	background-size: 100%;
+}
+.banner-r h2{
+	font-size: 120px;
+	font-weight: 900;
+}
+.banner-r p{
+	font-size: 28px;
+	font-weight: 700;
+}
+
+
+.footer{
+	text-align: center;
 }
