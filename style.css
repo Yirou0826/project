@@ -1,9 +1,7 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,15 +52,15 @@ table {
   border-spacing: 0;
 }
 
-/* ----------------------全站設定----------------------- */
-*:before, *:after {
+/*---------------------------------------------------------/ 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+/* ----------------------------------------------------- */
+body {
   font-family: "Noto Sans TC", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
-/* ------------------------------------------------------ */
 a {
   text-decoration: none;
   color: #000000;
@@ -72,53 +70,27 @@ a {
   color: #0027D5;
 }
 
-.p300 {
-  padding-top: 300px;
-  padding-bottom: 300px;
-}
-
-/* ----------------------------------------------------- */
 .wrap {
   margin: 0 auto;
   max-width: 1920px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .header-link a {
   display: inline-block;
   font-size: 28px;
   font-weight: 700;
-  margin: 24px 40px;
+  padding: 24px 20px;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
 }
 .container h2 {
   font-size: 64px;
@@ -126,22 +98,13 @@ a {
 }
 
 .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .banner {
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .banner-l {
@@ -149,27 +112,22 @@ a {
 }
 .banner-r {
   width: 960px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #0027D5;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
 }
 .banner-r-bg {
-  display: inline-block;
   max-width: 100%;
   background-image: url("images/Hero Section2.png");
   background-repeat: no-repeat;
+  padding-left: 60px;
 }
 .banner-r-title {
   font-size: 120px;
   font-weight: 900;
 }
-.banner-r h3 {
-  margin-top: 40px;
+.banner-r-content {
   font-size: 28px;
   font-weight: 700;
 }
@@ -180,26 +138,23 @@ a {
   display: inline-block;
   margin-top: -160px;
   padding: 80px 40px;
-  font-weight: 500;
-  font-size: 28px;
   margin-right: 80px;
 }
 .banner-article p {
   margin-bottom: 28px;
+  font-weight: 500;
+  font-size: 28px;
 }
 
 .blog-introduction {
   max-width: 1296px;
   margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .blog-introduction-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   padding-left: 110px;
   padding-right: 110px;
@@ -215,15 +170,10 @@ a {
 }
 .blog-introduction-main p {
   font-weight: 500;
-  line-height: 1.5;
 }
 .blog-introduction-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .blog-introduction-item-content {
   margin-left: -20px;
@@ -235,16 +185,9 @@ a {
   height: 40px;
 }
 .blog-introduction-item2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 .blog-introduction-item2 img {
   z-index: 0;
@@ -266,23 +209,14 @@ a {
   padding: 80px 0;
 }
 .blog-post .course {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 40px auto;
   gap: 24px;
 }
 .blog-post .course-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 416px;
   margin: 20px 0;
 }
@@ -340,15 +274,12 @@ a {
 .blog-example {
   max-width: 1296px;
   margin: 0 auto;
+  margin-top: 80px;
 }
 
 .blog-example-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .blog-example-banner-img img {
   display: block;
@@ -357,17 +288,9 @@ a {
   border: 24px solid #EDEDED;
 }
 .blog-example-banner-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid black;
+  justify-content: space-between;
+  flex-direction: column;
   width: 745px;
   height: 568px;
   margin-left: -97px;
@@ -387,7 +310,7 @@ a {
 .blog-example-banner-content2 {
   width: 446px;
   background: #F5F5F5;
-  margin-left: 219px;
+  margin-left: 120px;
   padding: 80px 40px;
 }
 .blog-example-banner-content2 a {
@@ -409,15 +332,12 @@ a {
   line-height: 1.5;
   max-width: 1296px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   background: #F5F5F5;
   padding: 24px;
   gap: 24px;
+  margin-bottom: 80px;
 }
 .blog-example-course-item h3 {
   padding-top: 4px;
@@ -463,13 +383,8 @@ a {
   margin-bottom: 16px;
 }
 .banner-subscriptionpage .subsciption-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 640px;
   gap: 8px;
 }
@@ -504,22 +419,13 @@ a {
   padding-bottom: 80px;
 }
 .blog-contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .blog-contact-item {
   width: 1296px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-bottom: 1px solid #000000;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -531,4 +437,4 @@ a {
 
 .footer p {
   text-align: center;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,35 +48,31 @@ table {
 	border-spacing: 0;
 }
 
-/* ----------------------全站設定----------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-*:before,*:after {
-	font-family: "Noto Sans TC", sans-serif;
-	box-sizing: border-box;
-	line-height: 1.5;
+/*---------------------------------------------------------/ 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+/* ----------------------------------------------------- */
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
 }
-/* ------------------------------------------------------ */
 
 a{
 	text-decoration: none;
 	color: #000000;
 }
+
 .blue{
     color:#0027D5;
 }
-.p300{
-    padding-top: 300px;
-    padding-bottom: 300px;
-}
 
-/* ----------------------------------------------------- */
 .wrap{
 	margin: 0 auto;
 	max-width: 1920px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
 
 }
 
@@ -87,18 +84,20 @@ a{
     display: inline-block;
 	font-size: 28px;
 	font-weight: 700;
-    margin: 24px 40px;
+    padding: 24px 20px ;
 }
 }
+
 .container{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+
     h2{
         font-size: 64px;
         font-weight: 700;
         }
 }
+
 .top{
     display:flex;
     flex-direction: column;
@@ -116,23 +115,22 @@ a{
         width: 960px;
         display:flex;
         flex-direction: column;
-        color:#0027D5;
-
+        justify-content: center;
+        gap:12px;
 
         &-bg{
-        display:inline-block;
         max-width: 100%;
         background-image: url("images/Hero Section2.png");
         background-repeat: no-repeat;
+        padding-left: 60px;
         }
         
         &-title{
             font-size: 120px;
-            font-weight: 900;
-            
+            font-weight: 900;   
         }
-        h3{
-            margin-top: 40px;
+        
+        &-content{
             font-size: 28px;
             font-weight: 700;
         }
@@ -148,11 +146,11 @@ a{
     display:inline-block;
     margin-top: -160px;
     padding: 80px 40px;
-    font-weight: 500;
-    font-size: 28px;
     margin-right: 80px;
     p{
         margin-bottom: 28px;
+        font-weight: 500;
+        font-size: 28px;
     }
 
 }
@@ -160,6 +158,8 @@ a{
 .blog-introduction{
     max-width: 1296px;
     margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     &-main{
         display:flex;
@@ -178,7 +178,6 @@ a{
         }
         p{
             font-weight: 500;
-            line-height: 1.5;
         }
     }
     &-item{
@@ -294,6 +293,7 @@ a{
 .blog-example{
     max-width: 1296px;
     margin: 0 auto;
+    margin-top: 80px;
     }
 .blog-example-banner{
     display: flex;
@@ -309,7 +309,6 @@ a{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        border:1px solid black;
         width: 745px;
         height: 568px;
         margin-left: -97px;
@@ -328,7 +327,7 @@ a{
         &2{
             width: 446px;
             background:#F5F5F5;
-            margin-left: 219px;
+            margin-left: 120px;
             padding: 80px 40px;
             a{
                 color:#0027D5;
@@ -358,6 +357,7 @@ a{
     background: #F5F5F5;
     padding: 24px;
     gap: 24px;
+    margin-bottom: 80px;
     &-item{
         h3{
         padding-top: 4px;
